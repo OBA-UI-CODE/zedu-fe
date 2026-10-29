@@ -7,13 +7,14 @@ import { WhySection } from "./_components/home/WhySection";
 import { FAQSection } from "./_components/home/FAQSection";
 import { DynamicFooter } from "./_components/footer/dynamic-footer";
 import { getHomeStructuredData } from "./_lib/homeStructuredData";
+import { Web3LearningSection } from "./_components/home/Web3LearningSection";
 
 export const metadata: Metadata = {
   title: {
     absolute: "Zedu - Learning Platform for Bootcamps, Schools, and Cohorts",
   },
   description:
-    "Zedu is an AI-powered education platform built for bootcamps and learning communities. Organize cohorts, run classes, manage communication, and scale modern learning in one workspace.",
+    "Zedu is an AI-powered education platform for bootcamps, schools, cohorts, and Web3 learning communities. Organize classes, blockchain training, DAO onboarding, and collaboration in one workspace.",
   openGraph: {
     title: "Zedu - Learning Platform for Bootcamps, Schools, and Cohorts",
     description:
@@ -38,6 +39,7 @@ const HomePage = () => {
         dangerouslySetInnerHTML={{ __html: structuredData }}
       />
       <HeroSection />
+      <Web3LearningSection />
       <FeatureSection />
       <ArticlesSection />
       <PricingSection />
